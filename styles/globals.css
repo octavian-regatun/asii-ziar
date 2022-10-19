@@ -18,3 +18,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Layout Global Classes */
+.max-layout-width {
+  width: min(1280px, 100%);
+}
