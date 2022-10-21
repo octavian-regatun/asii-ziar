@@ -15,8 +15,9 @@ const EditorsPage = () => {
             <div className="max-layout-width bg-gray-300 p-4">
                 <EditorsComponent></EditorsComponent>
             </div>
-
+             
             <Footer></Footer>
+         
         </div>
     );
 }

@@ -47,7 +47,7 @@ const fakeData=[
 const EditorsComponent = () => {
     return (
         <div>
-        <p className='m-2 font-sans'><h3>Meet our Redactors</h3></p>
+       <h3 className='m-2 font-sans'>Meet our Redactors</h3>
         <div className="flex justify-around flex-wrap bg-slate-200">
             
             {
