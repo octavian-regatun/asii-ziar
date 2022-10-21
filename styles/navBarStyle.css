@@ -1,0 +1,33 @@
+.logo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+.linksNavBar {
+    display: flex;
+    margin-right: 3rem;
+}
+
+li {
+    padding: 1rem;
+}
+
+li:hover {
+    color: indigo;
+}
+
+nav {
+    position: sticky;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(227, 226, 226);
+}
