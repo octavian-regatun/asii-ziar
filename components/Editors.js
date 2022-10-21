@@ -54,7 +54,7 @@ const EditorsComponent = () => {
             fakeData.map(author => {
                 return (
                     
-                    <Author data={author} />
+                    <Author data={author} key={''}/>
                 )
             })
         }
