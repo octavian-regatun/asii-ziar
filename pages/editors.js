@@ -13,7 +13,7 @@ const EditorsPage = () => {
                 </div>
             </div>
 
-            <div className="max-layout-width bg-gray-300 p-4">
+            <div className="max-layout-width p-4">
                 <EditorsComponent></EditorsComponent>
             </div>
              
