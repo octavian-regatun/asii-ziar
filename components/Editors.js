@@ -1,4 +1,4 @@
-import Author from './Author'
+import Author from './Editor'
 
 const fakeData=[
     {
@@ -47,7 +47,7 @@ const fakeData=[
 const EditorsComponent = () => {
     return (
         <div>
-       <h3 className='m-2 font-sans'>Meet our Redactors</h3>
+       <h3 className='m-2 font-sans'>Meet our <span className='font-semibold'>editors</span></h3>
         <div className="flex justify-around flex-wrap bg-slate-200">
             
             {
