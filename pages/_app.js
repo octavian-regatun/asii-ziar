@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import '../styles/navBarStyle.css'
+import "../styles/globals.css";
+import "../styles/NavBar.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
