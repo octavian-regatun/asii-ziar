@@ -34,7 +34,42 @@ export default function Home() {
       <NavBar />
 
       <main className="grid grid-cols-12 px-16 gap-12">
-        {/* aici ar trebui sa vina Headerul facut de Andreea */}
+        {/* aici ar trebui sa vina Headerul facut de Andreea */}{" "}
+        <div className="col-span-12 flex flex-row justify-center gap-16 text-center">
+          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
+            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
+              Ziarul ASII
+            </h4>
+            <p className="text-slate-700">
+              Unul dintre cele mai vechi proiecte ASII, infiintat in 2003
+            </p>
+          </div>
+          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
+            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
+              Editii vechi
+            </h4>
+            <p className="text-slate-700">
+              Cea mai veche editie a ziarului inca pastratata este din anul 2004
+            </p>
+          </div>
+          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
+            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
+              Recomandari
+            </h4>
+            <p className="text-slate-700">
+              Ziarul ASII ofera recomandari din domeniul IT
+            </p>
+          </div>
+          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
+            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
+              Echipa Ziarului
+            </h4>
+            <p className="text-slate-700">
+              Echipa ziarului este formata din Redactor-Sef, redactori,
+              colaboratori, corectori, graficieni...
+            </p>
+          </div>
+        </div>
         <div className="col-span-8 flex gap-16">
           {articles.map(
             (article, index) =>
