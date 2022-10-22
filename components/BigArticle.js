@@ -8,7 +8,7 @@ export default function BigArticle(props) {
     <div className="flex flex-col gap-4">
       <Image
         className="rounded-xl"
-        src={imageSrc || ""}
+        src={imageSrc}
         width={300}
         height={400}
         alt="article image"

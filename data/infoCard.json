@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Ziarul ASII",
+        "description": "Unul dintre cele mai vechi proiecte ASII, infiintat in 2003"
+    },
+    {
+        "id": "2",
+        "title": "Editii vechi",
+        "description": "Cea mai veche editie a ziarului inca pastratata este din anul 2004"
+    },
+    {
+        "id": "3",
+        "title": "Recomandari",
+        "description": "Ziarul ASII ofera recomandari din domeniul IT"
+    },
+    {
+        "id": "4",
+        "title": "Echipa Ziarului",
+        "description": "Echipa ziarului este formata din Redactor-Sef, redactori, colaboratori, corectori, graficieni..."
+    }
+]
