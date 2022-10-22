@@ -5,6 +5,8 @@ import SmallArticle from "../components/SmallArticle";
 import MediumArticle from "../components/MediumArticle";
 import articles from "../data/articles.json";
 import NavBar from "../components/NavBar";
+import infoCardData from "../data/infoCard.json";
+import InfoCard from "../components/InfoCard";
 
 export default function Home() {
   const [imageData, setImageData] = useState([]);
@@ -36,44 +38,19 @@ export default function Home() {
       <main className="grid grid-cols-12 px-16 gap-12">
         {/* aici ar trebui sa vina Headerul facut de Andreea */}{" "}
         <div className="col-span-12 flex flex-row justify-center gap-16 text-center">
-          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
-            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
-              Ziarul ASII
-            </h4>
-            <p className="text-slate-700">
-              Unul dintre cele mai vechi proiecte ASII, infiintat in 2003
-            </p>
-          </div>
-          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
-            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
-              Editii vechi
-            </h4>
-            <p className="text-slate-700">
-              Cea mai veche editie a ziarului inca pastratata este din anul 2004
-            </p>
-          </div>
-          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
-            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
-              Recomandari
-            </h4>
-            <p className="text-slate-700">
-              Ziarul ASII ofera recomandari din domeniul IT
-            </p>
-          </div>
-          <div className="drop-shadow-xl bg-slate-50 hover:bg-sky-50 rounded-xl p-8 basis-1/4">
-            <h4 className="text-indigo-900 font-bold font-semibold text-xl">
-              Echipa Ziarului
-            </h4>
-            <p className="text-slate-700">
-              Echipa ziarului este formata din Redactor-Sef, redactori,
-              colaboratori, corectori, graficieni...
-            </p>
-          </div>
+          {infoCardData.map((data) => (
+            <InfoCard
+              key={`infoCard-${data.id}`}
+              title={data.title}
+              description={data.description}
+            />
+          ))}
         </div>
         <div className="col-span-8 flex gap-16">
           {articles.map(
             (article, index) =>
-              index < 2 && (
+              index < 2 &&
+              imageData[index]?.download_url && (
                 <BigArticle
                   key={`bigArticle-${article.title}-${index}`}
                   title={article.title}
@@ -87,7 +64,8 @@ export default function Home() {
         <div className="col-span-4 flex flex-col gap-12">
           {articles.map(
             (article, index) =>
-              index < 3 && (
+              index < 3 &&
+              imageData[index]?.download_url && (
                 <SmallArticle
                   key={`smallArticle-${article.title}-${index}`}
                   title={article.title}
@@ -110,17 +88,20 @@ export default function Home() {
           </a>
         </div>
         <div className="col-span-12 flex flex-row gap-6">
-          {articles.slice(4).map((article, index) => {
-            return (
-              <MediumArticle
-                key={`mediumArticle-firstRow-${article.title}-${index}`}
-                title={article.title}
-                description={article.description}
-                articleHref={article.articleHref}
-                imageSrc={imageData[index]?.download_url}
-              />
-            );
-          })}
+          {articles
+            .slice(4)
+            .map(
+              (article, index) =>
+                imageData[index]?.download_url && (
+                  <MediumArticle
+                    key={`mediumArticle-firstRow-${article.title}-${index}`}
+                    title={article.title}
+                    description={article.description}
+                    articleHref={article.articleHref}
+                    imageSrc={imageData[index]?.download_url}
+                  />
+                )
+            )}
         </div>
         {/* Inca o sectiune cu articole */}
         <div className="col-span-12 flex flex-row justify-between items-center">
@@ -136,17 +117,20 @@ export default function Home() {
           </a>
         </div>
         <div className="col-span-12 flex flex-row gap-6">
-          {articles.slice(4).map((article, index) => {
-            return (
-              <MediumArticle
-                key={`mediumArticle-secondRow-${article.title}-${index}`}
-                title={article.title}
-                description={article.description}
-                articleHref={article.articleHref}
-                imageSrc={imageData[index]?.download_url}
-              />
-            );
-          })}
+          {articles
+            .slice(4)
+            .map(
+              (article, index) =>
+                imageData[index]?.download_url && (
+                  <MediumArticle
+                    key={`mediumArticle-secondRow-${article.title}-${index}`}
+                    title={article.title}
+                    description={article.description}
+                    articleHref={article.articleHref}
+                    imageSrc={imageData[index]?.download_url}
+                  />
+                )
+            )}
         </div>
       </main>
     </>
