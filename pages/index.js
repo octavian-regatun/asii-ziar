@@ -1,27 +1,23 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import BigArticle from "../components/BigArticle";
-import SmallArticle from "../components/SmallArticle";
-import MediumArticle from "../components/MediumArticle";
-import articles from "../data/articles.json";
-import NavBar from "../components/NavBar";
-import infoCardData from "../data/infoCard.json";
+import CarouselHeader from "../components/CarouselHeader";
 import InfoCard from "../components/InfoCard";
+import MediumArticle from "../components/MediumArticle";
+import NavBar from "../components/NavBar";
+import SmallArticle from "../components/SmallArticle";
+import articles from "../data/articles.json";
+import carouselData from "../data/carousel.json";
+import infoCardData from "../data/infoCard.json";
+import { fetchImages } from "../utils/fetchImages";
 
 export default function Home() {
-  const [imageData, setImageData] = useState([]);
-
-  async function fetchImageData() {
-    const response = await fetch("https://picsum.photos/v2/list");
-    const data = await response.json();
-
-    return data;
-  }
+  const [images, setImages] = useState([]);
 
   useEffect(() => {
     (async () => {
-      const imageData = await fetchImageData();
-      setImageData(imageData);
+      const imageData = await fetchImages();
+      setImages(imageData);
     })();
   }, []);
 
@@ -34,9 +30,8 @@ export default function Home() {
       </Head>
 
       <NavBar />
-
-      <main className="grid grid-cols-12 px-16 gap-12">
-        {/* aici ar trebui sa vina Headerul facut de Andreea */}{" "}
+      <CarouselHeader data={carouselData} />
+      <main className="grid grid-cols-12 px-16 gap-12 py-8">
         <div className="col-span-12 flex flex-row justify-center gap-16 text-center">
           {infoCardData.map((data) => (
             <InfoCard
@@ -50,13 +45,13 @@ export default function Home() {
           {articles.map(
             (article, index) =>
               index < 2 &&
-              imageData[index]?.download_url && (
+              images[index]?.download_url && (
                 <BigArticle
                   key={`bigArticle-${article.title}-${index}`}
                   title={article.title}
                   description={article.description}
                   articleHref={article.articleHref}
-                  imageSrc={imageData[index]?.download_url}
+                  imageSrc={images[index]?.download_url}
                 />
               )
           )}
@@ -65,7 +60,7 @@ export default function Home() {
           {articles.map(
             (article, index) =>
               index < 3 &&
-              imageData[index]?.download_url && (
+              images[index]?.download_url && (
                 <SmallArticle
                   key={`smallArticle-${article.title}-${index}`}
                   title={article.title}
@@ -92,13 +87,13 @@ export default function Home() {
             .slice(4)
             .map(
               (article, index) =>
-                imageData[index]?.download_url && (
+                images[index]?.download_url && (
                   <MediumArticle
                     key={`mediumArticle-firstRow-${article.title}-${index}`}
                     title={article.title}
                     description={article.description}
                     articleHref={article.articleHref}
-                    imageSrc={imageData[index]?.download_url}
+                    imageSrc={images[index]?.download_url}
                   />
                 )
             )}
@@ -121,13 +116,13 @@ export default function Home() {
             .slice(4)
             .map(
               (article, index) =>
-                imageData[index]?.download_url && (
+                images[index]?.download_url && (
                   <MediumArticle
                     key={`mediumArticle-secondRow-${article.title}-${index}`}
                     title={article.title}
                     description={article.description}
                     articleHref={article.articleHref}
-                    imageSrc={imageData[index]?.download_url}
+                    imageSrc={images[index]?.download_url}
                   />
                 )
             )}

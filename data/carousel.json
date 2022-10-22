@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "title": "Title 1",
+        "description": "Description 1",
+        "imageSrc": "https://i.imgur.com/HBBBgyw.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Title 2",
+        "description": "Description 2",
+        "imageSrc": "https://i.imgur.com/VSOVUB3.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Title 3",
+        "description": "Description 3",
+        "imageSrc": "https://i.imgur.com/977hSZG.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Title 4",
+        "description": "Description 4",
+        "imageSrc": "https://i.imgur.com/ZSJQXHT.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Title 5",
+        "description": "Description 5",
+        "imageSrc": "https://i.imgur.com/Gg9kGeo.jpg"
+    }
+]
