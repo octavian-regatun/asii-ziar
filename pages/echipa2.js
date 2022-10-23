@@ -9,7 +9,7 @@ import Image from "next/image";
 
 
 
-const echipa2 = () => {
+const Echipa2 = () => {
 
   const [data, setData] = useState([])
 
@@ -114,7 +114,7 @@ setData(mockdata)
           </div>
           <div className='grid grid-cols-4' data-aos="zoom-in">
         {
-         data ? data.map(({imagine, title, descriere}) => (<Articol1 imagine={imagine1} title={title} descriere={descriere} />)) : <div>nothing</div>
+         data ? data.map(({imagine, title, descriere, key}) => (<Articol1 key ={key} imagine={imagine1} title={title} descriere={descriere} />)) : <div>nothing</div>
         }
 
           </div>
@@ -122,4 +122,4 @@ setData(mockdata)
   )
 }
 
-export default echipa2
+export default Echipa2
