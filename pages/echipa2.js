@@ -19,55 +19,59 @@ const echipa2 = () => {
       
       title: "Despre ASII",
       descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-      imagine: "https://www.collegedata.com/hs-fs/collegedata/images/article/what_will_college_life_be_like.jpg"
+      imagine: "/components/imagine1.jpg"
   
   },
   {
-    title: "Despre ASII",
+    title: "Ziarul De ASII",
     descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-    imagine: "https://www.bgosoftware.com/blog/wp-content/uploads/2015/10/Featured_photo_BLOG_Humans.jpg"
+    imagine: "/components/imagine1.jpg"
   },
   {
       
-    title: "Despre ASII",
+    title: "Eveniment",
     descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-    imagine: "https://www.collegedata.com/hs-fs/collegedata/images/article/what_will_college_life_be_like.jpg"
+    imagine: "/components/imagine1.jpg"
 
 },
 {
-  title: "Despre ASII",
+  title: "Eveniment",
   descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-  imagine: "https://www.bgosoftware.com/blog/wp-content/uploads/2015/10/Featured_photo_BLOG_Humans.jpg"
+  imagine: "/components/imagine1.jpg"
 },
 {
       
-  title: "Despre ASII",
+  title: "Proiect",
   descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-  imagine: "https://www.collegedata.com/hs-fs/collegedata/images/article/what_will_college_life_be_like.jpg"
-
+  imagine: "/components/imagine1.jpg"
 },
 {
-title: "Despre ASII",
+  title: "Proiect",
 descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-imagine: "https://www.bgosoftware.com/blog/wp-content/uploads/2015/10/Featured_photo_BLOG_Humans.jpg"
+imagine: "/components/imagine1.jpg"
 },
 {
   
-title: "Despre ASII",
+  title: "Proiect",
 descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-imagine: "https://www.collegedata.com/hs-fs/collegedata/images/article/what_will_college_life_be_like.jpg"
+imagine: "/components/imagine1.jpg"
 
 },
 {
-title: "Despre ASII",
+  title: "Proiect",
 descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-imagine: "https://www.bgosoftware.com/blog/wp-content/uploads/2015/10/Featured_photo_BLOG_Humans.jpg"
+imagine: "/components/imagine1.jpg"
 },
 {
-  title: "Despre ASII",
+  title: "Proiect",
   descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
-  imagine: "https://www.bgosoftware.com/blog/wp-content/uploads/2015/10/Featured_photo_BLOG_Humans.jpg"
-  }
+  imagine: "/components/imagine1.jpg"
+  },
+  {
+    title: "Proiect",
+    descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+    imagine: "/components/imagine1.jpg"
+    },
   ];
 
 
@@ -93,9 +97,9 @@ setData(mockdata)
 
   return (
     <div>
-    <div className="text-5xl mt-5 mb-5 ml-5 text-white font-bold bg-red-500 w-2/6 rounded-2xl p-2 text-center ">
+    <div className="text-5xl mt-5 mb-5 ml-5 text-white font-bold bg-red-600 w-2/6 rounded-2xl p-2 text-center ">
 <Typewriter
-            words={['Ziarul de ASII']}
+            words={['Ziarul de ASII', 'Sectiunea Articole']}
             loop={20}
             cursor
             cursorStyle='_'
@@ -108,7 +112,7 @@ setData(mockdata)
           />
         
           </div>
-          <div className='grid grid-cols-3' data-aos="zoom-in">
+          <div className='grid grid-cols-4' data-aos="zoom-in">
         {
          data ? data.map(({imagine, title, descriere}) => (<Articol1 imagine={imagine1} title={title} descriere={descriere} />)) : <div>nothing</div>
         }
