@@ -121,6 +121,63 @@ imagine: "/components/imagine1.jpg"
     descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
     imagine: "/components/imagine1.jpg"
     },
+    {
+      
+      title: "Despre ASII",
+      descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+      imagine: "/components/imagine1.jpg"
+  
+  },
+  {
+    title: "Ziarul De ASII",
+    descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+    imagine: "/components/imagine1.jpg"
+  },
+  {
+      
+    title: "Eveniment",
+    descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+    imagine: "/components/imagine1.jpg"
+
+},
+{
+  title: "Eveniment",
+  descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+  imagine: "/components/imagine1.jpg"
+},
+{
+      
+  title: "Proiect",
+  descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+  imagine: "/components/imagine1.jpg"
+},
+{
+  title: "Proiect",
+descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+imagine: "/components/imagine1.jpg"
+},
+{
+  
+  title: "Proiect",
+descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+imagine: "/components/imagine1.jpg"
+
+},
+{
+  title: "Proiect",
+descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+imagine: "/components/imagine1.jpg"
+},
+{
+  title: "Proiect",
+  descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+  imagine: "/components/imagine1.jpg"
+  },
+  {
+    title: "Proiect",
+    descriere: "sdljha ldhas dhsald aslkh dashflkashflkas flkhassdf lkhafls khasflkhasflkh",
+    imagine: "/components/imagine1.jpg"
+    },
   ];
 
 
