@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-
+import Articol1 from '../components/Articol1'
 
 
 const echipa2 = () => {
@@ -27,6 +27,7 @@ const echipa2 = () => {
             onLoopDone={handleDone}
             onType={handleType}
           />
+          <Articol1 />
     </div>
   )
 }
