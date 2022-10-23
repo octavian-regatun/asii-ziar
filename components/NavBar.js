@@ -1,3 +1,10 @@
+import { FaBars } from 'react-icons/fa';
+
+function RevealList()
+{
+    console.log("It works");
+}
+
 export default function NavBar() {
   return (
     <nav className="navbar">
@@ -24,6 +31,7 @@ export default function NavBar() {
           <a href="">Echipa Ziarului</a>
         </li>
       </ul>
+      <button className="navbar-list-button" onClick={RevealList}><FaBars/></button>
     </nav>
   );
 }
