@@ -203,7 +203,7 @@ setData(mockdata)
 
   return (
     <div>
-    <div className="text-5xl mt-5 mb-5 ml-5 text-white font-bold bg-red-600 w-2/6 rounded-2xl p-2 text-center ">
+    <div className="text-5xl mt-5 mb-5 ml-5 text-white font-bold bg-red-600 w-6/6 sm:w-2/6 rounded-2xl p-2 text-center ">
 <Typewriter
             words={['Ziarul de ASII', 'Sectiunea Articole']}
             loop={20}
@@ -218,7 +218,7 @@ setData(mockdata)
           />
         
           </div>
-          <div className='grid grid-cols-4' data-aos="zoom-in">
+          <div className='grid grid-cols-1 sm:grid-cols-4' data-aos="zoom-in">
         {
          data ? data.map(({imagine, title, descriere, key}) => (<Articol1 key ={key} imagine={imagine1} title={title} descriere={descriere} />)) : <div>nothing</div>
         }
