@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import Article from '../components/Article'
 import Articol1 from '../components/Articol1'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -7,7 +8,55 @@ import { useState } from 'react';
 import imagine1 from "../components/imagine1.jpg";
 import Image from "next/image";
 
+import image from "../components/thumbnail.jpg"
 
+const mockdata = [
+  {
+    title: "ASII",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Test titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Alt titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+  {
+    title: "Ultimul titlu",
+    description: "Lorem ipsum dolor sit amet",
+    image: "../components/thumbnail.jpg",
+  },
+]
 
 const Echipa2 = () => {
 
@@ -83,8 +132,8 @@ setData(mockdata)
 
   const handleType = (count) => {
     // access word count number
-    console.log(count)}
-  
+    console.log(count)
+  }
 
   const handleDone = () => {
     console.log(`Done after 5 loops!`)
