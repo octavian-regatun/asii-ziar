@@ -30,9 +30,11 @@ export default function Home() {
       </Head>
 
       <NavBar />
+
       <CarouselHeader data={carouselData} />
-      <main className="grid grid-cols-12 px-16 gap-12 py-8">
-        <div className="col-span-12 flex flex-row justify-center gap-16 text-center">
+
+      <main className="grid grid-cols-12 mx-16 gap-y-12 my-8">
+        <div className="col-span-12 grid gap-16 text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {infoCardData.map((data) => (
             <InfoCard
               key={`infoCard-${data.id}`}
@@ -41,7 +43,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="col-span-8 flex gap-16">
+        <div className="col-span-7 flex gap-16">
           {articles.map(
             (article, index) =>
               index < 2 &&
@@ -56,7 +58,7 @@ export default function Home() {
               )
           )}
         </div>
-        <div className="col-span-4 flex flex-col gap-12">
+        <div className="col-start-9 col-end-13 flex flex-col gap-12">
           {articles.map(
             (article, index) =>
               index < 3 &&
@@ -70,7 +72,7 @@ export default function Home() {
               )
           )}
         </div>
-        <div className="col-span-12 flex flex-row justify-between items-center">
+        <div className="col-span-12 gap-6 flex flex-row flex-wrap justify-between items-center">
           <h5 className="font-bold text-4xl text-indigo-900">
             The science behind Smart UV
           </h5>
@@ -82,7 +84,7 @@ export default function Home() {
             See all articles
           </a>
         </div>
-        <div className="col-span-12 flex flex-row gap-6">
+        <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
             .slice(4)
             .map(
@@ -99,7 +101,7 @@ export default function Home() {
             )}
         </div>
         {/* Inca o sectiune cu articole */}
-        <div className="col-span-12 flex flex-row justify-between items-center">
+        <div className="col-span-12 gap-6 flex flex-row flex-wrap justify-between items-center">
           <h5 className="font-bold text-4xl text-indigo-900">
             Smart UV case studies
           </h5>
@@ -111,7 +113,7 @@ export default function Home() {
             See all articles
           </a>
         </div>
-        <div className="col-span-12 flex flex-row gap-6">
+        <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
             .slice(4)
             .map(
