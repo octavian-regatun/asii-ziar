@@ -14,12 +14,17 @@ const echipa2 = () => {
     console.log(`Done after 5 loops!`)
   }
 
+
+
+
+
+
   return (
     <div>
-    <div className="text-7xl text-red-500">
+    <div className="text-5xl mt-5 mb-5 ml-5 text-white font-bold bg-red-500 w-2/6 rounded-2xl p-2 text-center ">
 <Typewriter
             words={['Ziarul de ASII']}
-            loop={5}
+            loop={20}
             cursor
             cursorStyle='_'
             typeSpeed={70}
@@ -27,10 +32,18 @@ const echipa2 = () => {
             delaySpeed={1000}
             onLoopDone={handleDone}
             onType={handleType}
+            className=""
           />
         
           </div>
           <div className='grid grid-cols-3'>
+          <Articol1 />
+          <Articol1 />
+          <Articol1 />
+          <Articol1 />
+          <Articol1 />
+          <Articol1 />
+          <Articol1 />
           <Articol1 />
           <Articol1 />
           <Articol1 />
