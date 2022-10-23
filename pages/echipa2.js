@@ -15,6 +15,7 @@ const echipa2 = () => {
   }
 
   return (
+    <div>
     <div className="text-7xl text-red-500">
 <Typewriter
             words={['Ziarul de ASII']}
@@ -27,7 +28,11 @@ const echipa2 = () => {
             onLoopDone={handleDone}
             onType={handleType}
           />
+        
+          </div>
+          <div>
           <Articol1 />
+          </div>
     </div>
   )
 }
