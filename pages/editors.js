@@ -16,9 +16,11 @@ const EditorsPage = () => {
             <div className="max-layout-width p-4">
                 <EditorsComponent></EditorsComponent>
             </div>
-             
-            <Footer></Footer>
-         
+
+            <div className="bg-gray-300 w-full">
+                <Footer></Footer>
+            </div>
+
         </div>
     );
 }

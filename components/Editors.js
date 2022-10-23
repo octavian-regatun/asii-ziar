@@ -51,10 +51,10 @@ const EditorsComponent = () => {
         <div className="flex justify-around flex-wrap bg-slate-200">
             
             {
-            fakeData.map(author => {
+            fakeData.map((author, index) => {
                 return (
                     
-                    <Author data={author} key={''}/>
+                    <Author data={author} key={`author-${index}`}/>
                 )
             })
         }
