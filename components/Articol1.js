@@ -19,6 +19,8 @@ function Articol1() {
         <button className="rounded-md border-2 bg-gray-800 text-white pl-2 pr-2 mt-2 hover:scale-110 transition-transform">
           Read more
         </button>
+
+        
       </div>
     </div>
   );
