@@ -43,7 +43,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="col-span-7 flex gap-16">
+        <div className="col-span-12 lg:col-span-8 flex flex-col lg:flex-row gap-8 md:mr-8">
           {articles.map(
             (article, index) =>
               index < 2 &&
@@ -58,7 +58,7 @@ export default function Home() {
               )
           )}
         </div>
-        <div className="col-start-9 col-end-13 flex flex-col gap-12">
+        <div className="col-span-12 lg:col-span-4 flex flex-col gap-12">
           {articles.map(
             (article, index) =>
               index < 3 &&
