@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 export default function MediumArticle({
   imageSrc,
@@ -17,12 +18,11 @@ export default function MediumArticle({
       />
       <h5 className="font-bold text-2xl text-indigo-900">{title}</h5>
       <p className="text-lg text-sky-900">{description}</p>
-      <a
-        href={articleHref}
-        className="underline text-purple-600 text-lg font-semibold"
-      >
-        Read Article
-      </a>
+      <Button
+        buttonHref={articleHref}
+        label = "Read Article"
+        variant = "text"
+      />
     </div>
   );
 }

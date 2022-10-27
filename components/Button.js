@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 
 export default function Button(props) {
-  const { articleHref, variant, label } = props;
+  const { buttonHref, variant, label } = props;
   let style;
   switch (variant) {
     case "text":
@@ -16,7 +16,7 @@ export default function Button(props) {
   return (
     <div>
       <a
-        href={articleHref}
+        href={buttonHref}
         className={style}
       >
       {label}
@@ -27,7 +27,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-  articleHref: PropTypes.string.isRequired,
+  buttonHref: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(['text', 'outlined']),
 };

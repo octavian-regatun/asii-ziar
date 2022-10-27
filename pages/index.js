@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import Button from "../components/Button";
 import BigArticle from "../components/BigArticle";
 import CarouselHeader from "../components/CarouselHeader";
 import InfoCard from "../components/InfoCard";
@@ -77,12 +78,11 @@ export default function Home() {
             The science behind Smart UV
           </h5>
 
-          <a
-            href={"#"}
-            className="text-slate-900 text-lg font-medium border-2 border-purple-700 rounded-xl w-fit px-8 py-1"
-          >
-            See all articles
-          </a>
+        <Button
+         buttonHref={"#"}
+         label = "See all articles"
+         variant = "outlined"
+        />
         </div>
         <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
@@ -106,12 +106,11 @@ export default function Home() {
             Smart UV case studies
           </h5>
 
-          <a
-            href={"#"}
-            className="text-slate-900 text-lg font-medium border-2 border-purple-700 rounded-xl w-fit px-8 py-1"
-          >
-            See all articles
-          </a>
+        <Button
+         buttonHref={"#"}
+         label = "See all articles"
+         variant = "outlined"
+        />
         </div>
         <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
