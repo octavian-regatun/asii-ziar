@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
+import Button from "./Button";
 
 export default function BigArticle(props) {
   const { imageSrc, title, description, articleHref } = props;
@@ -15,12 +16,11 @@ export default function BigArticle(props) {
       />
       <h1 className="font-medium text-5xl text-indigo-900">{title}</h1>
       <h2 className="text-lg">{description}</h2>
-      <a
-        href={articleHref}
-        className="text-slate-900 text-lg font-medium border-2 border-purple-700 rounded-xl w-fit px-8 py-2"
-      >
-        Read Article
-      </a>
+      <Button
+        buttonHref={articleHref}
+        label = "Read Article"
+        variant = "outlined"
+      />
     </div>
   );
 }
