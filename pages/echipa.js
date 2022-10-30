@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import EditorsComponent from "../components/Editors";
 import Image from "next/image";
 
-const EditorsPage = () => {
+const EchipaPage = () => {
     return (
         <div className="w-full flex flex-col items-center gap-4">
             <div className="w-full h-[712px] overflow-hidden relative">
@@ -24,4 +24,4 @@ const EditorsPage = () => {
         </div>
     );
 }
-export default EditorsPage;
+export default EchipaPage;
