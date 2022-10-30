@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 export default function NavBarMobileButtons(props) {
   const { data } = props;
@@ -34,3 +35,12 @@ export default function NavBarMobileButtons(props) {
     </section>
   );
 }
+
+NavBarMobileButtons.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

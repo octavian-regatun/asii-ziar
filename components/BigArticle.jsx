@@ -18,8 +18,8 @@ export default function BigArticle(props) {
       <h2 className="text-lg">{description}</h2>
       <Button
         buttonHref={articleHref}
-        label = "Read Article"
-        variant = "outlined"
+        label="Read Article"
+        variant="outlined"
       />
     </div>
   );

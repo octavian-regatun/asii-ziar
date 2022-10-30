@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 export default function NavBarDesktopButtons(props) {
   const { data } = props;
@@ -15,3 +16,12 @@ export default function NavBarDesktopButtons(props) {
     </ul>
   );
 }
+
+NavBarDesktopButtons.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
