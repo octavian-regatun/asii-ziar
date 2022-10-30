@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Acasa",
+        "href": "/"
+    },
+    {
+        "name": "Articole",
+        "href": "articole"
+    },
+    {
+        "name": "Istoric",
+        "href": "istoric"
+    },
+    {
+        "name": "Ziarul Tiparit",
+        "href": "ziarul-tiparit"
+    },
+    {
+        "name": "Echipa Ziarului",
+        "href": "echipa"
+    }
+]

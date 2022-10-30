@@ -7,9 +7,9 @@ import InfoCard from "../components/InfoCard";
 import MediumArticle from "../components/MediumArticle";
 import NavBar from "../components/NavBar";
 import SmallArticle from "../components/SmallArticle";
-import articles from "../data/articles.json";
-import carouselData from "../data/carousel.json";
-import infoCardData from "../data/infoCard.json";
+import articles from "../assets/data/articles.json";
+import carouselData from "../assets/data/carousel.json";
+import infoCardData from "../assets/data/infoCard.json";
 import { fetchImages } from "../utils/fetchImages";
 
 export default function Home() {
@@ -78,11 +78,11 @@ export default function Home() {
             The science behind Smart UV
           </h5>
 
-        <Button
-         buttonHref={"#"}
-         label = "See all articles"
-         variant = "outlined"
-        />
+          <Button
+            buttonHref={"#"}
+            label="See all articles"
+            variant="outlined"
+          />
         </div>
         <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
@@ -106,11 +106,11 @@ export default function Home() {
             Smart UV case studies
           </h5>
 
-        <Button
-         buttonHref={"#"}
-         label = "See all articles"
-         variant = "outlined"
-        />
+          <Button
+            buttonHref={"#"}
+            label="See all articles"
+            variant="outlined"
+          />
         </div>
         <div className="col-span-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {articles
