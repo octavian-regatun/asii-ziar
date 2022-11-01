@@ -11,6 +11,7 @@ import articles from "../assets/data/articles.json";
 import carouselData from "../assets/data/carousel.json";
 import infoCardData from "../assets/data/infoCard.json";
 import { fetchImages } from "../utils/fetchImages";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [images, setImages] = useState([]);
@@ -129,6 +130,7 @@ export default function Home() {
             )}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

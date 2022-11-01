@@ -5,7 +5,7 @@ import {
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-const Footer = () => {
+export default function Footer() {
   return (
     <>
       <div className="flex flex-col bg-gray-50">
@@ -117,6 +117,4 @@ const Footer = () => {
       </div>
     </>
   );
-};
-
-export default Footer;
+}

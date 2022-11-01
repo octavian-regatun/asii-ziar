@@ -5,6 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import articlesData from "../assets/data/articles.json";
 import imagine1 from "../assets/images/article.jpg";
 import Articol1 from "../components/Articol1";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 const ArticolePage = () => {
@@ -40,6 +41,7 @@ const ArticolePage = () => {
           <div>nothing</div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

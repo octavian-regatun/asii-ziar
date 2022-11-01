@@ -26,7 +26,7 @@ const EchipaPage = () => {
         </div>
 
         <div className="bg-gray-300 w-full">
-          <Footer></Footer>
+          <Footer />
         </div>
       </div>
     </>
