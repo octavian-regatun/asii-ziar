@@ -8,7 +8,7 @@ export default function NavBarLogo() {
         <Image
           layout="fill"
           className="navbar-img"
-          src="https://ziar.asii.ro/wp-content/uploads/2017/11/cropped-23899336_1290842091062673_548336396_n.png"
+          src="/logo.png"
           alt="logo"
         />
       </a>
